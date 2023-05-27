@@ -1,0 +1,130 @@
+body{
+    background: black;
+    padding: 0;
+    margin: 0;
+}
+#load{
+    background: black;
+    z-index: 999;
+    width: 100svw!important;
+    height: 100svh!important;
+    top: 0;
+    left: 0;
+    position: fixed;
+   
+
+  
+    
+
+}
+.video{
+    width: 30vw;
+}
+.icon{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.icon h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 3.2vw;
+}
+.banner img{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100svw;
+    height: 100svh;
+    object-fit: cover;
+    opacity: 40%;
+    z-index: -1;
+    filter: blur(1px);
+}
+
+
+.headlo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    flex-wrap: nowrap;
+  
+}
+.headlo a{
+    text-align: center;
+    text-decoration: none;
+}
+.anulogo{
+    max-width:10rem ;
+    margin-right: 20px;
+
+}
+.fndnlogo{
+    max-width: 7.8rem;
+  
+}
+.ooaalogo{
+    max-width: 3.9rem;
+    margin-right: 20px;
+    
+    
+
+}
+.cont{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    color: rgb(228, 228, 228);
+    font-family: 'Bruno Ace SC',cursive;
+    font-size: 0.8rem;
+    
+    
+   
+
+}
+.cont img{
+    max-width: 11rem;
+    
+}   
+.cont a{
+    color: rgb(228, 228, 228);
+    text-decoration: none;
+    
+}   
+@media (max-width:550px){
+    .cont{
+        flex-direction: column;
+    }
+    .sem1{
+        margin-bottom: 7rem;
+    }
+  
+}
+@media (max-width:410px){
+    .headlo{
+        flex-wrap: wrap;
+    }
+    .ooaalogo{
+        margin-bottom: 1.5rem;
+        
+    }
+    .anulogo{
+        margin-bottom: 1.5rem;
+        
+    }
+    .fndnlogo{
+        margin-bottom: 1.5rem;
+        
+    }
+
+  
+}
+
+

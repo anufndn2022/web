@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesem2pg2.css">
+    <title>Sem2_pg2</title>
+</head>
+<body>
+    <div class="bg">
+        <img src="bg/anant bg.jpg" alt="">
+    </div>
+    <header>
+        <div class="headlo">
+            <a href="sem2.html" >
+                <img class="logo" src="icon/LOGO.png">
+            </a>
+        </div>
+     
+    </header>
+    <div class="con">
+        <h1 class="title">
+            Modules
+        </h1>
+    <div  class="box">
+            <div id="vnr" class="card" >
+                <a href="https://sites.google.com/anu.edu.in/springsemestervnr/visualisation-representation-2" target="_blank">
+                    <img src="icon/vnricon.jpg" alt="">
+                    <h6>
+                        Visualisation<br>And<br>Representation II
+                    </h6>
+                </a>
+                
+                
+            </div>
+            <div id="trd" class="card" >
+                <a href="https://sites.google.com/anu.edu.in/springsemestertrd/technical-drawing-2" target="_blank">
+                    <img src="icon/trdicon.jpg" alt="">
+                    <h6>
+                        Technical<br>Representation<br>Drawing II
+                    </h6>
+                </a>
+                
+            </div>
+            
+            <div id="mpp" class="card" >
+                <a href="https://sites.google.com/anu.edu.in/springsemestermpp/mpp" target="_blank">
+                    <img src="icon/mppicon.jpg" alt="">
+                    <h6>
+                        Material<br>Properties<br>and Processes
+                    </h6>
+                </a>
+                
+                
+            </div>
+
+            <div id="edd" class="card" >
+                <a href="https://sites.google.com/anu.edu.in/springsemesteredd/exploring-design-disciplines" target="_blank">
+                    <img src="icon/eddicon.jpeg" alt="">
+                    <h6>
+                        Exploring<br>Design<br>Disciplines
+                    </h6>
+                </a>
+                
+                
+            </div>
+    </div>
+    </div>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".card"), {
+            max: 13,
+		    speed: 200, 
+         
+            scale: 1.1,
+           
+        });
+       
+
+        if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            console.log('is mobile');
+            const destroyBox = document.querySelectorAll('.card');
+            console.log(destroyBox);
+            destroyBox.forEach((element) => {
+                element.vanillaTilt.destroy();
+            });
+            
+
+        } 
+        else {
+            console.log('isnt mobile')
+            const cards = document.querySelectorAll('.card');
+            console.log(cards); // This will log all the selected elements with the class "card"
+        }
+    </script>
+
+    
+</body>
+</html>
